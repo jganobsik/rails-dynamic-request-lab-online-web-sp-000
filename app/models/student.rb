@@ -3,15 +3,7 @@ class Student < ActiveRecord::Base
     self.first_name + " " + self.last_name
   end
   
-  def first_name
-    self.first_name
-  end
-  
-  def last_name
-    self.last_name
-  end
-  
-  def show
+    def show
   @student = Student.find(params[:id])
   end
 end
